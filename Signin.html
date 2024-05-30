@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/icon2.jfif">
+    <script src="javascript.js"></script>
+    <script>function signin(){
+         var nameInput = document.getElementById("input1").value;
+        localStorage.setItem("name", nameInput);
+        
+    }
+  
+    </script>
+        
+    <style>
+        
+        #body {
+
+            height: 100vh;
+            width: 100vh;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        #name {
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        #password {
+            font-size: medium;
+            font-weight: bold;
+        }
+
+
+        #divlog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+
+
+        }
+
+        #divlog {
+            box-shadow: 0 0 30px #1296a0;
+            border: 2px solid rgb(29, 141, 135);
+            padding: 50px;
+            border-radius: 10px;
+            background-color: rgba(24, 170, 170, 0.7);
+            
+
+        }
+       
+
+        h2 {
+           
+            display: inline-block;
+            width: 240px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            margin-right: 20px;
+        }
+
+        #email {
+
+            font-size: 12px;
+            margin-left: -3px;
+            height: 20px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-right: 50px;
+            font-weight: 100;
+        }
+
+        #password {
+            font-size: 12px;
+            height: 20px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-weight: 100;
+        }
+
+        h1 {
+            z-index: 1;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        span {
+
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            margin-left: 20px;
+        }
+
+        #background img {
+
+            width: 220vh;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+
+        }
+
+        #button {
+            
+            
+            margin-top: 20px;
+            position: relative;
+            width: 130px;
+            border: none;
+            background: #089cb6;
+            color: #fff;
+            padding: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.2s;
+            border-radius: 5px;
+            opacity: 0.8;
+            letter-spacing: 1px;
+            box-shadow: #1a1616 0px 7px 2px, #000 0px 8px 5px;
+        }
+
+        #button:hover {
+            opacity: 1;
+        }
+
+        #button:active {
+            top: 4px;
+            box-shadow: #221f1e 0px 3px 2px, #000 0px 3px 5px;
+        }
+
+        #group {
+            position: relative;
+        }
+
+        #input {
+
+            font-size: 16px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 200px;
+            border: none;
+            border-bottom: 1px solid #515151;
+            background: transparent;
+        }
+
+        #input:focus {
+            outline: none;
+        }
+
+        label {
+            color: #ffeeee;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        #input:focus~label,
+        #input:valid~label {
+            top: -20px;
+            font-size: 14px;
+            color: #eef2ff;
+        }
+
+        #bar {
+            position: relative;
+            display: block;
+            width: 200px;
+        }
+
+        #bar:before,
+        #bar:after {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            position: absolute;
+            background: #5264AE;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        #bar:before {
+            left: 50%;
+        }
+
+        #bar:after {
+            right: 50%;
+        }
+
+        #input:focus~.bar:before,
+        #input:focus~.bar:after {
+            width: 50%;
+        }
+
+        #highlight {
+            position: absolute;
+            height: 60%;
+            width: 100px;
+            top: 25%;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        #input {
+            color: white;
+        }
+
+        @keyframes inputHighlighter {
+            from {
+                background: #5264AE;
+            }
+
+            to {
+                width: 0;
+                background: transparent;
+            }
+
+        }
+
+        #group {
+
+            position: relative;
+            margin-left: 65px;
+            margin-bottom: 30px;
+        }
+
+
+
+        #group {
+            position: relative;
+        }
+
+        #input1 {
+
+            font-size: 16px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 200px;
+            border: none;
+            border-bottom: 1px solid #515151;
+            background: transparent;
+        }
+
+        #input1:focus {
+            outline: none;
+        }
+
+        label {
+            color: #ffeeee;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        #input1:focus~label,
+        #input1:valid~label {
+            top: -20px;
+            font-size: 14px;
+            color: #eef2ff;
+        }
+
+        #bar {
+            position: relative;
+            display: block;
+            width: 200px;
+        }
+
+        #bar:before,
+        #bar:after {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            position: absolute;
+            background: #5264AE;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        #bar:before {
+            left: 50%;
+        }
+
+        #bar:after {
+            right: 50%;
+        }
+
+        #input1:focus~.bar:before,
+        #input1:focus~.bar:after {
+            width: 50%;
+        }
+
+        #highlight {
+            position: absolute;
+            height: 60%;
+            width: 100px;
+            top: 25%;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        #input1{
+            color: white;
+        }
+
+        @keyframes inputHighlighter {
+            from {
+                background: #5264AE;
+            }
+
+            to {
+                width: 0;
+                background: transparent;
+            }
+
+        }
+
+        #group {
+
+            position: relative;
+            margin-left: 65px;
+            margin-bottom: 30px;
+        }
+        
+        
+    </style>
+</head>
+
+<body id="body">
+    <div id="background"><img src="images/backsignin.jpg" alt=""></div>
+
+    <div id="divlog">
+        <form action="index.HTML" id="form">
+            <h1>Sign In</h1>
+
+            <div id="group">
+                <input required="" type="text" id="input1" >
+                <span id="highlight"></span>
+                <span id="bar"></span>
+                <label>Name/email</label>
+            </div>
+            <div id="group">
+                <input required="" type="password" id="input">
+                <span id="highlight"></span>
+                <span id="bar"></span>
+                <label>Password</label>
+            </div>
+
+
+            <button type="submit" id="button" onclick="signin()">Sign in...</button>
+            <span> remember my password </span><input id="check" type="checkbox">
+
+        </form>
+
+    </div>
+</body>
+
+</html>

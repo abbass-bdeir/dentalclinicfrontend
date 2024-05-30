@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dentist Website</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/icon.jfif">
+   <script src="javascript.js"></script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var storedName = localStorage.getItem("name");
+        var outputElement = document.getElementById("output");
+        if (storedName) {
+          outputElement.innerText = "User:   " + storedName + " ";
+        }
+      });
+      
+      
+    </script>
+   
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="row">
+            <a href="#home" class="logo">dental<span>Care.</span></a>
+            <nav class="nav">
+               <a href="#home" class="home1">home</a>
+               <a href="#services">services</a>
+               <a href="#process">process</a>
+               <a href="mailto:Dentist@gmail.com">Contact Us</a>
+            </nav>
+         </div>
+         <p id="output"></p>
+      </div>
+      
+   </header>
+   <section class="home" id="home">
+      <div class="container">
+         <div class="row">
+            <div class="content">
+               <h3>let us brighten your smile</h3>
+               <a href="form.html" class="link-btn">make appointment</a>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+   <section class="services" id="services">
+      <h1 class="heading">our services</h1>
+      <div class="box-container container">
+         <div class="box">
+            <img src="images/icon-1.svg" alt="">
+            <h3>Alignment specialist</h3>
+            <p class="para">dentistry specialty that addresses the diagnosis, prevention, management,
+               and correction of mal-positioned teeth and jaws, ...<a target="_blank"
+                  href="https://en.wikipedia.org/wiki/Clear_aligners">
+                  <h4 class="seemore">see more..</h4>
+               </a></p>
+            </a>
+         </div>
+         <div class="box">
+            <img src="images/icon-2.svg" alt="">
+            <h3>Cosmetic dentistry</h3>
+            <p class="para">Cosmetic dentistry is generally used to refer to any dental
+               work that improves the appearance of teeth, gums and/or bite.<a target="_blank"
+                  href="https://en.wikipedia.org/wiki/Cosmetic_dentistry">
+                  <h4 class="seemore">see more..</h4>
+               </a></p>
+         </div>
+         <div class="box">
+            <img src="images/icon-3.svg" alt="">
+            <h3>Oral hygiene experts</h3>
+            <p class="para">Oral hygiene is the practice of keeping one's oral cavity clean and free of disease and
+               other problems (e.g. bad breath) by regular brushing of the teeth ...<a target="_blank"
+                  href="https://en.wikipedia.org/wiki/Oral_hygiene">
+                  <h4 class="seemore">see more..</h4>
+               </a></p>
+         </div>
+         <div class="box">
+            <img src="images/icon-4.svg" alt="">
+            <h3>Root canal specialist</h3>
+            <p class="para">A specialist can often re-treat failing root canals, and these
+               teeth will then heal, often years after the initial root canal procedure<a target="_blank"
+                  href="https://en.wikipedia.org/wiki/Root_canal_treatment">
+                  <h4 class="seemore">see more..</h4>
+               </a></p>
+         </div>
+         <div class="box">
+            <img src="images/icon-5.svg" alt="">
+            <h3>Live dental advisory</h3>
+            <p class="para">Dentistry, also known as dental medicine and oral medicine,
+               is the branch of medicine focused on the teeth, gums, and mouth.<a target="_blank"
+                  href="https://en.wikipedia.org/wiki/Dentistry">
+                  <h4 class="seemore">see more..</h4>
+               </a></p>
+         </div>
+         <div class="box">
+            <img src="images/icon-6.svg" alt="">
+            <h3>Cavity inspection</h3>
+            <p class="para">inspection of all visible tooth surfaces
+               using a good light source, dental mirror and explorer<a target="_blank"
+                  href="https://en.wikipedia.org/wiki/Tooth_decay">
+                  <h4 class="seemore">see more..</h4>
+               </a></p>
+         </div>
+      </div>
+   </section>
+   <section class="process" id="process">
+      <h1 class="heading">work process</h1>
+      <div class="box-container container">
+         <div class="box" >
+            
+            <a href="cosden.html" target="_blannk" ><img src="images/process-1.png" alt="">
+               <h3>Cosmetic Dentistry</h3>
+            </a>
+         </div>
+         <div class="box">
+            <a href="peden.html" target="_blank" ><img src="images/process-2.png" alt="">
+               <h3>Pediatric Dentistry</h3>
+            </a>
+         </div>
+         <div class="box">
+            <a href="dental.html" target="_blank" ><img src="images/process-3.png" alt="">
+               <h3>Dental Implants</h3>
+            </a>
+         </div>
+      </div>
+   </section>
+   <section class="footer">
+      <div class="box-container container">
+         <div class="box">
+            <h3>phone number</h3>
+            <p>+96107111222</p>
+            <p>+96181331113</p>
+         </div>
+         <div class="box">
+            <h3>our address</h3>
+            <p>Lebanon</p>
+            <p>TO GLOBAL SOON...</p>
+         </div>
+         <div class="box">
+            <h3>opening hours</h3>
+            <p>00:07am to 10:00pm</p>
+         </div>
+         <div class="box">
+            <h3>email address</h3>
+            <p>dentist@gmail.com</p>
+            <p>Dr.fadel@gmail.com</p>
+            <p>Dr.Mariam@gmail.com</p>
+         </div>
+      </div>
+      <div class="credit"> &copy; copyright @2023 by <span>Fadel Wahab and Mariam Fahes</span></div>
+
+   </section>
+</body>
+
+</html>

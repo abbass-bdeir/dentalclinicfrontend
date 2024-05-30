@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+.image {
+   width: 15%;
+   margin-left: -250px;
+}
+h1{
+   margin-right: 250px;
+}
+.table{
+   box-shadow: 0 0 10px #1296a0;
+}
+.createacc:hover{
+   
+   color:#00b8b8;
+}
+
+
+.Signin{
+   margin-left: 10px;
+   color: black;
+}
+.Signin:hover{
+   color:white;
+}
+
+:root{
+   --blue:#00b8b8;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-bg:#eee;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  
+   font-family: 'Poppins', sans-serif;
+   
+   box-sizing: border-box;
+ border-radius: 5px;
+   text-decoration: none ;
+   text-transform: capitalize;
+}
+
+*::-webkit-scrollbar{
+   height: 50px;
+   width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 65px;
+}
+
+section{
+   padding:70px 20px;
+}
+
+
+table{
+  
+   padding: 10px;
+   border-radius: 20px;
+background-color: #00b8b8;
+backdrop-filter: blur(8px);
+
+}
+.logo{
+   margin-left: -40px;
+   margin-top: -60px;
+   width: 300px;
+   float: left;
+}
